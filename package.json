@@ -1,23 +1,27 @@
 {
-  "name": "nodejssampleapp",
+  "name": "nodejstokenauth",
   "version": "1.0.0",
-  "description": "Sample App with express routing",
-  "main": "app.js",
+  "description": "Node Js Token Based Authentication app",
+  "main": "./server/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "cls && nodemon ./server/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Venkatesh Chinthakindi <venkatschinthakindi@gmail.com>",
+  "author": "Venkatesh Chinthakindi",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^4.1.1",
-    "cookie-parser": "^1.4.3",
-    "ejs": "^2.6.1",
+    "bcrypt": "^3.0.0",
+    "body-parser": "^1.18.3",
     "express": "^4.16.3",
-    "express-session": "^1.15.6",
-    "jquery": "^3.3.1",
-    "mongodb": "^3.1.1",
+    "express-promise-router": "^3.0.2",
+    "joi": "^13.4.0",
+    "json-parser": "^1.1.5",
+    "jsonwebtoken": "^8.3.0",
+    "mongoose": "^5.2.4",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.18.2",
     "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
     "passport-local": "^1.0.0"
   }
 }
